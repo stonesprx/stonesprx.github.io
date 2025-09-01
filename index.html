@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stone SpRx Music</title>
+
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/css/uikit.min.css" />
+
+  <!-- Google Font: Audiowide -->
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for platform icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Styles -->
+  <style>
+    /* Deep black background */
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: #000000;
+      color: #fff;
+      font-family: 'Arial Black', 'Impact', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Simple navbar */
+    .simple-navbar {
+      background: rgba(0, 0, 0, 0.9) !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .simple-navbar .uk-logo {
+      color: #fff !important;
+      font-family: 'Audiowide', 'Arial Black', sans-serif;
+      font-size: 1.8rem;
+      font-weight: normal;
+    }
+
+    .simple-navbar .uk-navbar-nav > li > a {
+      color: #fff !important;
+      font-family: 'Arial', sans-serif;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    .simple-navbar .uk-navbar-nav > li > a:hover {
+      color: #ccc !important;
+    }
+
+    .simple-navbar .uk-navbar-nav > li.uk-active > a {
+      color: #ccc !important;
+      text-decoration: underline;
+    }
+
+    .simple-navbar .uk-navbar-toggle {
+      color: #fff !important;
+    }
+
+    /* Bio section */
+    .bio-section {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .bio-section p {
+      font-family: 'Arial', sans-serif;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    /* Platform links */
+    .platform-links .uk-button {
+      font-family: 'Arial', sans-serif;
+      font-size: 1.5rem; /* Larger icons */
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: background 0.3s, color 0.3s, transform 0.3s;
+      margin: 10px;
+      padding: 10px;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%; /* Circular buttons */
+    }
+
+    .platform-links .uk-button:hover {
+      background: rgba(255, 255, 255, 0.2);
+      color: #ccc;
+      text-decoration: none;
+      transform: scale(1.1); /* Slight scale on hover */
+    }
+
+    /* Ensure content is above any potential overlays */
+    nav, .uk-container {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="uk-navbar-container simple-navbar uk-padding-small" uk-navbar>
+    <div class="uk-navbar-left uk-flex-middle">
+      <!-- Hamburger visible only on mobile -->
+      <a
+        class="uk-navbar-toggle uk-hidden@m uk-margin-small-left"
+        uk-toggle="target: #mobile-menu"
+        uk-icon="icon: menu; ratio: 1.5"
+        href="#">
+      </a>
+      <!-- Logo left on desktop -->
+      <a class="uk-navbar-item uk-logo uk-visible@m uk-margin-small-left" href="index.html">Stone SpRx</a>
+    </div>
+    <!-- Center logo on mobile -->
+    <div class="uk-navbar-center uk-navbar-item uk-logo uk-hidden@m">
+       Stone SpRx
+    </div>
+    <!-- Right nav links only on desktop -->
+    <div class="uk-navbar-right uk-visible@m uk-margin-small-right">
+      <ul class="uk-navbar-nav">
+        <li class="uk-active"><a href="index.html">Home</a></li>
+        <li><a href="tracks.html">Tracks</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Off-canvas menu for mobile -->
+  <div id="mobile-menu" uk-offcanvas="mode: slide; overlay: true">
+    <div class="uk-offcanvas-bar">
+      <ul class="uk-nav uk-nav-default">
+        <li class="uk-active"><a href="index.html">Home</a></li>
+        <li><a href="tracks.html">Tracks</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bio and platform links -->
+  <div class="uk-container uk-margin-large-top">
+    <div class="bio-section">
+      <p>
+      This is just the beginning. Stay tuned.
+      </p>
+      <div class="platform-links uk-margin-top uk-flex uk-flex-center uk-flex-wrap">
+        <a href="https://soundcloud.com/user-86930561" target="_blank" class="uk-button" title="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+        <a href="https://www.youtube.com/channel/UC6Gxzcv8Rfx695riPcX9BxA" target="_blank" class="uk-button" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://open.spotify.com/artist/5N2BdaZ1jhpY9xwjIEa1ul?si=qX7h46eGQoa6QDszmOidrQ" target="_blank" class="uk-button" title="Spotify"><i class="fab fa-spotify"></i></a>
+        <a href="https://www.tiktok.com/@stonesprx?_t=ZP-8zLkuVo6tTj&_r=1" target="_blank" class="uk-button" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/stonesprx/" target="_blank" class="uk-button" title="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>

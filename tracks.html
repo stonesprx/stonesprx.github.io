@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stone SpRx Music - Tracks</title>
+
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/css/uikit.min.css" />
+
+  <!-- Google Font: Audiowide -->
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <style>
+    /* Deep black background */
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: #000000;
+      color: #fff;
+      font-family: 'Arial Black', 'Impact', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Simple navbar */
+    .simple-navbar {
+      background: rgba(0, 0, 0, 0.9) !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .simple-navbar .uk-logo {
+      color: #fff !important;
+      font-family: 'Audiowide', 'Arial Black', sans-serif;
+      font-size: 1.8rem;
+      font-weight: normal;
+    }
+
+    .simple-navbar .uk-navbar-nav > li > a {
+      color: #fff !important;
+      font-family: 'Arial', sans-serif;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    .simple-navbar .uk-navbar-nav > li > a:hover {
+      color: #ccc !important;
+    }
+
+    .simple-navbar .uk-navbar-nav > li.uk-active > a {
+      color: #ccc !important;
+      text-decoration: underline;
+    }
+
+    .simple-navbar .uk-navbar-toggle {
+      color: #fff !important;
+    }
+
+    /* Header styling */
+    .uk-heading-line span {
+      color: #fff !important;
+      font-family: 'Audiowide', 'Arial Black', sans-serif;
+      font-size: 2rem;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+
+    /* Music card styling */
+    .uk-card {
+      background: rgba(0, 0, 0, 0.7) !important;
+      border: 1px solid rgba(255, 255, 255, 0.1) !important;
+      transition: transform 0.3s;
+    }
+
+    .uk-card-title {
+      color: #fff !important;
+      font-family: 'Audiowide', 'Arial', sans-serif;
+      font-size: 1.5rem;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+
+    /* Center audio controls and YouTube iframes on cards */
+    .uk-card audio,
+    .uk-card iframe {
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    /* Responsive iframe height */
+    .uk-card iframe {
+      height: 315px;
+    }
+
+    @media (max-width: 640px) {
+      .uk-card iframe {
+        height: 200px;
+      }
+    }
+
+    /* Section spacing */
+    .uk-section {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="uk-navbar-container simple-navbar uk-padding-small" uk-navbar>
+    <div class="uk-navbar-left uk-flex-middle">
+      <!-- Hamburger visible only on mobile -->
+      <a
+        class="uk-navbar-toggle uk-hidden@m uk-margin-small-left"
+        uk-toggle="target: #mobile-menu"
+        uk-icon="icon: menu; ratio: 1.5"
+        href="#">
+      </a>
+      <!-- Logo left on desktop -->
+      <a class="uk-navbar-item uk-logo uk-visible@m uk-margin-small-left" href="index.html">Stone SpRx</a>
+    </div>
+    <!-- Center logo on mobile -->
+    <div class="uk-navbar-center uk-navbar-item uk-logo uk-hidden@m">
+      Stone SpRx
+    </div>
+    <!-- Right nav links only on desktop -->
+    <div class="uk-navbar-right uk-visible@m uk-margin-small-right">
+      <ul class="uk-navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="uk-active"><a href="tracks.html">Tracks</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Off-canvas menu for mobile -->
+  <div id="mobile-menu" uk-offcanvas="mode: slide; overlay: true">
+    <div class="uk-offcanvas-bar">
+      <ul class="uk-nav uk-nav-default">
+        <li><a href="index.html">Home</a></li>
+        <li class="uk-active"><a href="tracks.html">Tracks</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Music container -->
+  <div class="uk-container uk-margin-top">
+    <!-- Features Section -->
+    <div class="uk-section">
+      <h1 class="uk-heading-line uk-text-center"><span>Features</span></h1>
+      <div class="uk-child-width-1-1 uk-grid-small uk-grid-match" uk-grid>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body uk-text-center">
+            <h3 class="uk-card-title">Ha Ha Ha (feat. Stone SpRx)</h3>
+            <iframe 
+              width="100%" 
+              height="315" 
+              src="https://www.youtube.com/embed/KN-sHIot-d8?enablejsapi=1&rel=0" 
+              title="Ha Ha Ha (feat. Stone SpRx)" 
+              frameborder="0" 
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body uk-text-center">
+            <h3 class="uk-card-title">Life Is Your Oyster (feat. Stone SpRx)</h3>
+            <iframe 
+              width="100%" 
+              height="315" 
+              src="https://www.youtube.com/embed/50h0cdOxZjU?list=RDL6oQ8I2HdDQ" 
+              title="Life Is Your Oyster (feat. Stone SpRx)" 
+              frameborder="0" 
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body uk-text-center">
+            <h3 class="uk-card-title">Off The Strength (feat. Stone SpRx)</h3>
+            <iframe 
+              width="100%" 
+              height="315" 
+              src="https://www.youtube.com/embed/L6oQ8I2HdDQ?list=RDL6oQ8I2HdDQ" 
+              title="Off The Strength (feat. Stone SpRx)"
+              frameborder="0" 
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- Stone SpRx Releases Section -->
+    <div class="uk-section">
+      <h1 class="uk-heading-line uk-text-center"><span>Unofficial Songs</span></h1>
+      <div class="uk-child-width-1-1 uk-grid-small uk-grid-match" uk-grid>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body uk-text-center">
+            <h3 class="uk-card-title">New House New Whip</h3>
+            <audio controls>
+              <source src="music/new house new whip.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body uk-text-center">
+            <h3 class="uk-card-title">Fuckin' Up the Weather</h3>
+            <audio controls>
+              <source src="music/fuckin up the weather - johnny dang beat.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>
